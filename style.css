@@ -38,7 +38,6 @@
     --very-light-grayish-cyan: hsl(189, 41%, 97%);
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -47,5 +46,109 @@ body{
     display: flex;
     justify-content: center;
     background-color: var(--light-grayish-cyan);
-    margin-top: 100px;
+    margin-top: 60px;
+}
+
+.color_vdc{
+    color: var(--very-dark-cyan);
+}
+
+
+
+/*ARTİCLE 1*/
+
+.article1{
+    width: 40%;
+}
+
+.number-input{
+    padding: 6px 20px;
+    text-align: end;
+    color: var(--very-dark-cyan);
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--very-light-grayish-cyan);
+}
+
+.number-input:focus-visible{
+    outline: none;
+}
+
+.dollar-icon{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 5px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    margin-top: 0.6rem;
+}
+.inputs input{
+    display: none;
+}
+
+.button{
+    border-radius: 6px;
+    background-color: var(--very-dark-cyan);
+    border: 2.5px solid var(--very-dark-cyan);
+    color: white;
+    padding: 6px 30px;
+    cursor: pointer;
+    font-size: min(6vw, 1.5rem);
+    font-family: "Space Mono", monospace;
+    text-align: center;
+    transition: 0.1s;
+}
+
+#custom{
+    background-color: var(--very-light-grayish-cyan);
+    color: var(--very-dark-cyan);
+    font-size: 24px;
+    border: 0;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#custom:focus-visible{
+    outline: none;
+}
+
+/*ARTİCLE 2*/
+
+.article2{
+    background-color: var(--very-dark-cyan);
+    width: 60%;
+}
+
+.h {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.p {
+    color: hsl(184, 14%, 56%);
+    font-size: 0.7rem;
+}
+
+.result {
+    font-size: 2rem;
+    color: hsl(172, 67%, 45%);
+    font-weight: 600;
+}
+
+#reset-btn {
+    color: var(--very-dark-cyan);
+    background-color: var(--strong-cyan);
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.1s;
+    opacity: 1;
 }
