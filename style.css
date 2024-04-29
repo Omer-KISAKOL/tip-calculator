@@ -57,10 +57,6 @@ body{
 
 /*ARTİCLE 1*/
 
-.article1{
-    width: 40%;
-}
-
 .number-input{
     padding: 6px 20px;
     text-align: end;
@@ -71,7 +67,7 @@ body{
 }
 
 .number-input:focus-visible{
-    outline: none;
+    outline-color: var(--strong-cyan);
 }
 
 .dollar-icon{
@@ -103,6 +99,11 @@ body{
     text-align: center;
     transition: 0.1s;
 }
+.button:hover{
+    background-color: var(--light-grayish-cyan);
+    border-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
 
 #custom{
     background-color: var(--very-light-grayish-cyan);
@@ -114,14 +115,13 @@ body{
 }
 
 #custom:focus-visible{
-    outline: none;
+    outline-color: var(--strong-cyan);
 }
 
 /*ARTİCLE 2*/
 
 .article2{
     background-color: var(--very-dark-cyan);
-    width: 60%;
 }
 
 .h {
@@ -151,4 +151,14 @@ body{
     cursor: pointer;
     transition: 0.1s;
     opacity: 1;
+}
+
+#reset-btn:hover{
+    background-color: var(--light-grayish-cyan);
+}
+
+.inputs input[type=radio]:checked + .button {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: 2.5px solid hsl(172, 67%, 45%);
 }
